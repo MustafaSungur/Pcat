@@ -10,8 +10,16 @@ const pageController = require("./controller/pageController");
 const app = express();
 
 // Connect DB
-mongoose.connect("mongodb://localhost/pcat-test-db");
-console.log("db connect");
+mongoose
+  .connect(
+    "mongodb+srv://root:DFKuaB1ZC4Maz8DK@lesson1.nxo3mw1.mongodb.net/?retryWrites=true&w=majority"
+  )
+  .then(() => {
+    console.log("DATABASE CONNECTED");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 // TAMPLATE ENGINE
 app.set("view engine", "ejs");

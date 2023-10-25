@@ -51,12 +51,18 @@ h2, p { color: #666666; }
 #tm-video-container {
     max-height: 720px;
     overflow: hidden;
-    background-color: #333;
+     background-image: url('../img/main_bg.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi div boyutuna sığdır */
+    background-position: top; /* Resmi yatayda ve dikeyde merkezle */
+    
+    width: 100%; /* İstediğiniz genişlik */
+    min-height: 35rem; /* İstediğiniz yükseklik */
 }
 
 #tm-video {
     width: 100%;
     height: auto;
+    
 }
 
 .tm-bg-black {
