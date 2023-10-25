@@ -11,9 +11,7 @@ const app = express();
 
 // Connect DB
 mongoose
-  .connect(
-    "mongodb+srv://root:DFKuaB1ZC4Maz8DK@lesson1.nxo3mw1.mongodb.net/?retryWrites=true&w=majority"
-  )
+  .connect("mongodb://localhost/pcat-test-db")
   .then(() => {
     console.log("DATABASE CONNECTED");
   })
